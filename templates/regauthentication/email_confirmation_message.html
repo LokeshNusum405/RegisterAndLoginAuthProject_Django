@@ -1,0 +1,9 @@
+{% autoescape off %}
+Welcome to Lokesh Django Project
+
+Hello {{name}}
+Please confirm Your Email by clicking on the link below
+
+Confirmation Link: http://{{domain}}{% url 'activate' uidb64=uid token=token%}
+
+{% endautoescape %}
